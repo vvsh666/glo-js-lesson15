@@ -31,9 +31,8 @@ squareElement.position = 'absolute'
 
 document.addEventListener('DOMContentLoaded', () => {
     const element = squareElement.createEl();
-    element.style.position = squareElement.position;
 
-    console.dir(element);
+    element.style.position = squareElement.position;
 
     document.addEventListener('keydown', (event) => {
         let left = parseInt(getComputedStyle(element).left);
@@ -62,19 +61,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 })
-
-
-
-
-
-
-
-
-
-
-// const newElement1 = new DomElement('.class-element', '200px', '400px', 'red', '24px', 'Это блочный элемент DIV');
-// const newElement2 = new DomElement('#id-element', '200px', '600px', 'blue', '40px', 'Это параграф');
-// newElement1.text = 'Это новый текст для блочного элемента DIV'
-// newElement1.createEl();
-// newElement2.createEl()
-
