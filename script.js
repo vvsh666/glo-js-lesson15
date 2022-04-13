@@ -11,11 +11,11 @@ DomElement.prototype.createEl = function () {
     let element = '';
     if (this.selector[0] === '.') {
         element = document.createElement('div');
-        element.classList.add = this.selector
+        element.classList.add(this.selector.slice(1))
     }
     if (this.selector[0] === '#') {
         element = document.createElement('p');
-        element.id = this.selector
+        element.id = this.selector.slice(1)
     }
     element.textContent = this.text;
     element.style.height = this.height;
